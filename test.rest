@@ -1,0 +1,35 @@
+@url = http://localhost:3003
+
+###
+GET {{url}}/currentuser
+Content-Type: application/json
+
+###
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "login": "ammar",
+    "password1":"11111"
+}
+  
+
+### SIGNUP
+POST {{url}}/signup
+Content-Type: application/json
+
+{
+	"user":{
+    "firstName": "user.firstName",
+    "lastName": "user.lastName",
+    "login": "user.lastName",
+    "email":" user.email",
+    "password1": "12345",
+    "password2": "12345",
+    "accessGroups": "loggedINUser, notYetApprovedUsers"
+  }
+}
+
+
+  
+
