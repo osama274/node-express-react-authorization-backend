@@ -60,6 +60,9 @@ app.post("/login", async (req, res) => {
   let user = await UserModel.findOne({ login });
   if (!user) {
     user = await UserModel.findOne({ login: "anonymousUser" });
+    req.session.user = user;
+        req.session.save();
+        res.json(user);
   } else {
     bcrypt.compare(password, user.hash).then((passwordIsOk) => {
       if (passwordIsOk) {
@@ -106,7 +109,7 @@ app.post("/signup", async (req, res) => {
     user.password1.trim() === "" ||
     user.password1 !== user.password2
   ) {
-    res.status(403);
+    res.sendStatus(403);
   } else {
     const salt = await bcrypt.genSalt();
     const hash = await bcrypt.hash(user.password1, salt);
@@ -119,11 +122,12 @@ app.post("/signup", async (req, res) => {
       accessGroups: "loggedINUser, notYetApprovedUsers",
     };
     const dbuser = await UserModel.create(_user);
+   
+    req.session.user = user;
+    req.session.save();
     res.json({
       userAdded: dbuser,
     });
-    req.session.user = user;
-    req.session.save();
   }
 });
 

@@ -1,1 +1,1 @@
-mongoimport --host cluster0-shard-00-01.ogshn.mongodb.net:27017 --db api001 --collection users100 --type json --file users100.json --jsonArray --authenticationDatabase admin --ssl --username mainuser
+mongoimport --host cluster0-shard-00-02.fxzag.mongodb.net:27017 --db mernshowcase --collection users --type json --file users.json --jsonArray

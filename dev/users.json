@@ -1,32 +1,53 @@
 [
-	{
-	  "username": "anonymousUser",
-	  "firstName": "Anonymous",
-	  "lastName": "User",
-	  "accessGroups": "loggedOutUsers"
-	},
-	{
-	  "username": "jj",
-	  "firstName": "James",
-	  "lastName": "JustSignedUpton",
-	  "accessGroups": "loggedInUsers,members"
-	},
-	{
-	  "username": "aa",
-	  "firstName": "Ashley",
-	  "lastName": "Approvedmemberton",
-	  "accessGroups": "loggedInUsers, members"
-	},
-	{
-	  "username": "kc",
-	  "firstName": "Kyle",
-	  "lastName": "ContentEditorton",
-	  "accessGroups": "loggedInUsers, members, contentEditors"
-	},
-	{
-	  "username": "ma",
-	  "firstName": "Mindy",
-	  "lastName": "Administraton",
-	  "accessGroups": "loggedInUsers,members, admins"
-	}
-      ]
+  {
+    "_id": "61aea30f46c2d37cbd62057b",
+    "firstName": "Anonymous",
+    "lastName": "User",
+    "accessGroups": "loggedOutUsers",
+    "login": "anonymousUser"
+  },
+  {
+    "_id": "61af7378814111c889f47e4a",
+    "firstName": "ammar",
+    "lastName": "bakkar",
+    "login": "ammar",
+    "email": "amarbakar33@gmail.com",
+    "hash": "$2b$10$WiOn4ZBvd51FJBKsXBCZHuYoY4tECuS23sU2s.RNWCFaiDnwyGsx.",
+    "accessGroups": "admins, members, loggedInUsers",
+    "createdAt": "2021-12-07T14:45:12.146Z",
+    "updatedAt": "2021-12-07T14:45:12.146Z"
+  },
+  {
+    "_id": "61b22216f70af088c365cf68",
+    "firstName": "admins",
+    "lastName": "admins",
+    "login": "admins",
+    "email": "admins@gmail.com",
+    "hash": "$2b$10$OEZp/qfmgYILZ8RCIbRJZ.nFxTLIzZLDfDOUohSdHw2c3j.YbbvlW",
+    "accessGroups": "loggedInUsers,members",
+    "createdAt": "2021-12-09T15:34:46.807Z",
+    "updatedAt": "2021-12-14T13:50:41.957Z"
+  },
+  {
+    "_id": "61b27857855c5e6de18fb80f",
+    "firstName": "osama",
+    "lastName": "alhajii",
+    "login": "osama",
+    "email": "os@gmail.com",
+    "hash": "$2b$10$D/fJDinEew3Kpa5eshQB3.4OZNjzORUM.iXVa5MUZRqpVO0DUc9/G",
+    "accessGroups": "loggedInUsers,members",
+    "createdAt": "2021-12-09T21:42:47.671Z",
+    "updatedAt": "2021-12-14T13:50:35.133Z"
+  },
+  {
+    "_id": "61b87e780eeee27aa9eafcbd",
+    "firstName": "gael",
+    "lastName": "kas",
+    "login": "gael",
+    "email": "gael@gmail.com",
+    "hash": "$2b$10$MW//Kkl5YLEofcyLnQUoteOzWN5N/pl/nIEZ9Ou7hIctGumD3T8uS",
+    "accessGroups": "loggedInUsers,members",
+    "createdAt": "2021-12-14T11:22:32.191Z",
+    "updatedAt": "2021-12-14T13:27:14.387Z"
+  }
+]
